@@ -1,0 +1,31 @@
+<!-- Comment the form tag and its contents and you will see no memory leaks -->
+<div>
+  <form (ngSubmit)="onSubmitForm()" #loginForm="ngForm">
+    <div>
+      <input
+      type="text"
+      autocomplete="off"
+      name="input"
+      placeholder="A simple solitary input"
+      required
+      ngModel>
+    </div>
+    <div>
+      <button
+      type="submit">
+        LOGIN
+      </button>
+    </div>
+  </form>
+</div>
+
+
+<br>
+<p>Let's put something here to simulate contents</p>
+<br>
+<div>
+  <button
+  (click)="onSubmitForm()">
+    LOGIN 2 BUTTON
+  </button>
+</div>
